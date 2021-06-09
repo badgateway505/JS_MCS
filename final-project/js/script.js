@@ -31,26 +31,27 @@ document.forms[0].onsubmit = evt => {
 	let inputRest = document.querySelectorAll('input')[3];
 	let inputMoney = document.querySelectorAll('input')[5];
 
-	let username = new Person;
-	username.name = inputName.value;
+	let user = new Person;
+	user.name = inputName.value;
 
 	//за каждый выбранный "да" начисляем +1 к счастью
-	if (inputCat.checked == true) username.hasCat();
-	if (inputRest.checked == true) username.hasRest();
-	if (inputMoney.checked == true) username.hasMoney();
-	username.isSunny();
+	if (inputCat.checked == true) user.hasCat();
+	if (inputRest.checked == true) user.hasRest();
+	if (inputMoney.checked == true) user.hasMoney();
+	user.isSunny();
 
 	//вывод имени
 	let personName = document.querySelector('.personName');
-	personName.innerHTML = username.name;
+	personName.innerHTML = user.name;
 
 	//проверка и вывод эмодзи
 	let icon = document.querySelector('.icon');
-	if (username.happiness > 3) {
+	if (user.happiness > 3) {
 		icon.innerHTML = '😄';
-	} else if (username.happiness > 1) {
+	} else if (user.happiness > 1) {
 		icon.innerHTML = '😐';
 	} else icon.innerHTML = '☹️';
+	console.log(user)
 }
 
 
