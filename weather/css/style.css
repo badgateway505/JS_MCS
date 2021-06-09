@@ -1,0 +1,13 @@
+@import url(reset.css);
+
+.content {
+	margin: 150px;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+label, input {
+	display: block;
+}
