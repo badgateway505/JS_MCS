@@ -1,7 +1,6 @@
 const APIkey = '423b5dee60e0f3b462bba311cbb37393';
 let url = 'https://api.openweathermap.org/data/2.5/weather?q=Москва&appid='+APIkey;
 
-//lol
 //отправление запроса
 let xhr = new XMLHttpRequest();
 xhr.open('GET', url, false);
@@ -52,7 +51,6 @@ document.forms[0].onsubmit = evt => {
 	} else if (username.happiness > 1) {
 		icon.innerHTML = '😐';
 	} else icon.innerHTML = '☹️';
-	console.log(username);
 }
 
 
