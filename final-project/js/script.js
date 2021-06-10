@@ -51,7 +51,6 @@ document.forms[0].onsubmit = evt => {
 	} else if (user.happiness > 1) {
 		icon.innerHTML = '😐';
 	} else icon.innerHTML = '☹️';
-	console.log(user)
 }
 
 
