@@ -7,6 +7,15 @@
 	<title>Script</title>
 </head>
 <body>
+	<a href="http://example.com/" onclick="
+	function sendRequest() {
+		let xhr = new XMLHttpRequest();
+		xhr.open('POST', 'https://httpbin.org/status/200', false);
+		xhr.send();
+		console.log('You clicked the link! Status is: ' + xhr.status);
+	}
+	sendRequest()
+	">promo</a>
 	<script src="js/script.js"></script>
 </body>
 </html>
